@@ -1,1 +1,0 @@
-C:\Users\Guilherme\Desktop\Blazor\release\web.config
