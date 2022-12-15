@@ -781,7 +781,7 @@
       "url": "css\/volt.css.map"
     },
     {
-      "hash": "sha256-lPa38kQDmbmbt3F7qE29UJpiCA1ayLxPt8bDwdo7nSQ=",
+      "hash": "sha256-fSPhBErojWiRAQhrHXe8spZvtOEx9f0JJpToQZmrfhY=",
       "url": "dashboard.html"
     },
     {
@@ -797,7 +797,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-wglklYfb936XfowkgavpbVvQAajRwoh+PMKDNExF10g=",
+      "hash": "sha256-ZjcqBHvP\/EcARhPIAWEZTEEyzxwS1hEsLOPPi9CDeUM=",
       "url": "index.html"
     },
     {
@@ -1661,5 +1661,5 @@
       "url": "vendor\/waypoints\/testem.json"
     }
   ],
-  "version": "zDnFz28r"
+  "version": "FXXjElnf"
 };
