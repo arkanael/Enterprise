@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-sz3TQCY7ArpEn\/uTTW+K8klrCcwMUTdIy7PvlosnA+k=",
+      "hash": "sha256-nqqHlv\/q6f+\/9LqUbZ3fdhM3XbmEoEgw4zeeaeLp5Lc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-68m4Lvzxz0RRM57cTCbSEq6+DKY1TH3GQJkcjdGhqCk=",
+      "hash": "sha256-WJ5yVSHAXoGk4x7F4FOtwilitXAZh1c1ETs6AOIOQvA=",
       "url": "_framework\/Enterprise.dll"
     },
     {
@@ -797,7 +797,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-ZjcqBHvP\/EcARhPIAWEZTEEyzxwS1hEsLOPPi9CDeUM=",
+      "hash": "sha256-uWnh545FEdsRorqKllKA4L3kRpSFH8uEeIkURjaI0HU=",
       "url": "index.html"
     },
     {
@@ -1661,5 +1661,5 @@
       "url": "vendor\/waypoints\/testem.json"
     }
   ],
-  "version": "FXXjElnf"
+  "version": "X42VgXGm"
 };
