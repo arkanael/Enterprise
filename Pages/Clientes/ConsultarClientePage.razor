@@ -1,0 +1,44 @@
+﻿@page "/consultar-cliente"
+@using Enterprise.PageModel.Clientes;
+@inject IJSRuntime JSRuntime;
+<PageTitle>Consultar Clientes</PageTitle>
+<BreadCrumb Descricao="Consultar clientes" Controle="cliente" Pagina="consulta"></BreadCrumb>
+
+
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>Razao Social</th>
+            <th>Nome Fantasia</th>
+            <th>CNPJ</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (clientes != null && clientes.Count > 0)
+        {
+            foreach (var cliente in clientes)
+            {
+                <tr>
+                    <td>@cliente.RazaoSocial</td>
+                    <td>@cliente.NomeFantasia</td>
+                    <td>@cliente.CNPJ</td>
+                    <td>
+                        <a href="/atualizar/@cliente.Id" class="btn btn-warning">Atualizar</a>
+                        <button class="btn btn-danger" @onclick="async () => await DeletarCliente(cliente.Id)">Deletar</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    List<ClienteConsultaPageModel> clientes = new List<ClienteConsultaPageModel>();
+
+
+    async Task DeletarCliente(Guid id)
+    {
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Tem certeza que deseja deletar?");
+    }
+}
