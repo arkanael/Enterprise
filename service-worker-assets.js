@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-\/z2V\/ttdZ0RkOq8K41PUUMttO\/683hIJCiholLpxVQw=",
+      "hash": "sha256-DVmvWpT4MX6kA8CZaVTIQlCrbKjpYDKnegiIdsvvYEM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-ZZs8CrxbmSVflriZkDmaCnRouFOlTZFB4uxJf5BgPBQ=",
+      "hash": "sha256-J3KTPNWrLFFAJSOcbJOpIdcKERhQ\/e0fhWcmV4iTPnI=",
       "url": "_framework\/Enterprise.dll"
     },
     {
@@ -1693,5 +1693,5 @@
       "url": "vendor\/waypoints\/testem.json"
     }
   ],
-  "version": "Z9r0dYuY"
+  "version": "wSlCy9IV"
 };
