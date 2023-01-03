@@ -1,13 +1,12 @@
 ﻿@page "/cadastrar-cliente"
 @using Enterprise.PageModel.Clientes;
 
-    <DataAnnotationsValidator />
-
 <BreadCrumb Descricao="cadastrar novo cliente" Controle="cliente" Pagina="cadastrar"></BreadCrumb>
 
 <PageTitle>Cadastrar Cliente</PageTitle>
 
 <EditForm Model="model" OnValidSubmit="Create">
+ <DataAnnotationsValidator />
     <div class="row">
         <div class="col-md-6 mb-3">
             <div>
