@@ -837,7 +837,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-gkNOD7dXN\/YM7DCIAVackuZGCMF9IFzw79gMrqc3Y4Y=",
+      "hash": "sha256-6\/odZ2l3b7xtQ4cGECjO9sl4QY7oZIhsnorADqngdaI=",
       "url": "index.html"
     },
     {
@@ -1701,5 +1701,5 @@
       "url": "vendor\/waypoints\/testem.json"
     }
   ],
-  "version": "y+1aAYwg"
+  "version": "oXEzwWXs"
 };
