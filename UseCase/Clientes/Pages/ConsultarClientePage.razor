@@ -1,7 +1,9 @@
 ﻿@page "/consultar-cliente"
-@using Enterprise.PageModel.Clientes;
+@using Enterprise.UseCase.Clientes.Model.Request;
+@using Enterprise.UseCase.Shared.Components
 @inject IJSRuntime JSRuntime;
 <PageTitle>Consultar Clientes</PageTitle>
+
 <BreadCrumb Descricao="Consultar clientes" Controle="cliente" Pagina="consulta"></BreadCrumb>
 
 <form class="row g-3">

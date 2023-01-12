@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
   </PropertyGroup>
@@ -23,6 +23,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="UseCase\Clientes\Components\" />
+    <Folder Include="UseCase\Clientes\Model\Response\" />
+    <Folder Include="UseCase\Clientes\Services\" />
+    <Folder Include="UseCase\Contas\Components\" />
+    <Folder Include="UseCase\Contas\Models\Response\" />
+    <Folder Include="UseCase\Contas\Services\" />
+    <Folder Include="UseCase\Dashboards\Services\" />
+    <Folder Include="UseCase\Logins\Components\" />
+    <Folder Include="UseCase\Logins\Models\Response\" />
+    <Folder Include="UseCase\Logins\Models\Request\" />
+    <Folder Include="UseCase\Categoria\" />
+    <Folder Include="UseCase\Usuarios\Components\" />
+    <Folder Include="UseCase\Usuarios\Models\" />
+    <Folder Include="UseCase\Usuarios\Services\" />
+    <Folder Include="wwwroot\imagens\" />
     <Folder Include="wwwroot\vendor\chartist\dist\scss\settings\" />
     <Folder Include="wwwroot\vendor\sass\types\legacy\" />
     <Folder Include="wwwroot\vendor\sass\types\logger\" />

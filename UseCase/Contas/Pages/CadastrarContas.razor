@@ -1,0 +1,116 @@
+﻿@page "/cadastrar-contas"
+@using Enterprise.UseCase.Contas.Models.Requests;
+
+<BreadCrumb Descricao="cadastrar nova conta" Controle="contas" Pagina="cadastrar"></BreadCrumb>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <p>Preencha o formulário para incluir uma conta.</p>
+                <hr />
+
+                <Loading IsLoading="@isLoading">
+                    <div class="mb-3">
+                        <strong class="text-success">@mensagemSucesso</strong>
+                        <strong class="text-danger">@mensagemErro</strong>
+                    </div>
+                </Loading>
+
+                <EditForm Model="@request" OnValidSubmit="@OnSubmit">
+
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Nome da conta:</label>
+                            <InputText class="form-control" @bind-Value="request.NomeConta" />
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.NomeConta)" />
+                            </span>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Data da conta:</label>
+                            <InputText type="date" class="form-control" @bind-Value="request.DataConta" />
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.DataConta)" />
+                            </span>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Valor da conta:</label>
+                            <InputText class="form-control" @bind-Value="request.Valor" />
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.Valor)" />
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label>Tipo da conta:</label>
+                            <InputSelect class="form-select" @bind-Value="request.TipoId">
+                                <option value="">Escolha uma opção</option>
+                              @*  @foreach (var item in tipos)
+                                {
+                                    <option value="@item.Id">@item.Nome</option>
+                                }*@
+                            </InputSelect>
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.TipoId)" />
+                            </span>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Categoria da conta:</label>
+                            <InputSelect class="form-select" @bind-Value="request.CategoriaId">
+                                <option value="">Escolha uma opção</option>
+                               @* @foreach (var item in categorias)
+                                {
+                                    <option value="@item.Id">@item.Nome</option>
+                                }*@
+                            </InputSelect>
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.CategoriaId)" />
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label>Observações da conta:</label>
+                            <InputTextArea class="form-control" @bind-Value="request.Observacoes" />
+                            <span class="text-danger">
+                                <ValidationMessage For="@(() => request.Observacoes)" />
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-primary" value="Realizar Cadastro" />
+                        </div>
+                    </div>
+
+                </EditForm>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ContasCadastrarRequest request = new ContasCadastrarRequest();
+    private bool isLoading = false;
+
+    private string mensagemSucesso;
+    private string mensagemErro;
+
+    private void OnSubmit()
+    {
+        isLoading = true;
+
+        mensagemSucesso = string.Empty;
+        mensagemErro = string.Empty;
+
+        isLoading = false;
+
+    }
+}

@@ -1,4 +1,4 @@
-﻿namespace Enterprise.PageModel.Clientes
+﻿namespace Enterprise.UseCase.Clientes.Model.Request
 {
     public class ClienteConsultaPageModel
     {
